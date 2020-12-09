@@ -51,7 +51,7 @@ export default {
           this.$route.params._city.slice(1)
       )
       fetch(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${this.$route.params._city},ru&cnt=5&units=metric&appid=c426927dc3a9b8d41cad09e0d65fa6e1`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${this.$route.params._city},ru&cnt=5&units=metric&appid=c426927dc3a9b8d41cad09e0d65fa6e1`
       )
         .then((res) => res.json())
         .then((res) => {

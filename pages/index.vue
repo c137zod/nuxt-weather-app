@@ -77,7 +77,7 @@ export default {
       if (this.select && this.loading === false) {
         this.$store.dispatch('searches/setSearches', this.select)
         fetch(
-          `http://api.openweathermap.org/data/2.5/forecast?q=${this.select},ru&cnt=5&units=metric&appid=c426927dc3a9b8d41cad09e0d65fa6e1`
+          `https://api.openweathermap.org/data/2.5/forecast?q=${this.select},ru&cnt=5&units=metric&appid=c426927dc3a9b8d41cad09e0d65fa6e1`
         )
           .then((res) => res.json())
           .then((res) => {
